@@ -4,8 +4,8 @@ import plotly.express as px
 import pathlib
 import platform
 
-# plt = platform.system()
-pathlib.WindowsPath = pathlib.PosixPath 
+plt = platform.system()
+if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
 
 # title
 st.title("Transport classification")
