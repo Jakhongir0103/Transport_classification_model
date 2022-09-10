@@ -6,12 +6,12 @@ import platform
 
 plt = platform.system()
 if plt == 'Linux': 
-    st.title(f'plt: {plt}')
-    st.title(f'wp: {pathlib.WindowsPath()}')
-    st.title(f'pp: {pathlib.PosixPath()}')
     pathlib.WindowsPath = pathlib.PosixPath
-    st.title(f'wp2: {pathlib.WindowsPath()}')
-    st.title(f'pp2: {pathlib.PosixPath()}')
+    st.title(f'plt: {plt}')
+#     st.title(f'wp: {pathlib.WindowsPath}')
+#     st.title(f'pp: {pathlib.PosixPath}')
+#     st.title(f'wp2: {pathlib.WindowsPath}')
+#     st.title(f'pp2: {pathlib.PosixPath}')
 
 # title
 # st.title("Transport classification")
