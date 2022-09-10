@@ -4,10 +4,14 @@ import plotly.express as px
 import pathlib
 import platform
 
-plt = platform.system()
-if plt == 'Linux': 
-    pathlib.WindowsPath = pathlib.PosixPath
-    st.title(f'plt: {plt}')
+temp = pathlib.PosixPath
+pathlib.PosixPath = pathlib.WindowsPath
+
+# plt = platform.system()
+# if plt == 'Linux': 
+#     pathlib.WindowsPath = pathlib.PosixPath
+
+#     st.title(f'plt: {plt}')
 #     st.title(f'wp: {pathlib.WindowsPath}')
 #     st.title(f'pp: {pathlib.PosixPath}')
 #     st.title(f'wp2: {pathlib.WindowsPath}')
