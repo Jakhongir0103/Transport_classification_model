@@ -7,7 +7,7 @@ import platform
 st.title(f'pwp: {pathlib.PureWindowsPath}')
 st.title(f'wp: {pathlib.WindowsPath}')
 st.title(f'pp: {pathlib.PosixPath}')
-pathlib.WindowsPath = pathlib.PosixPath
+# pathlib.WindowsPath = pathlib.PosixPath
 
 # plt = platform.system()
 # if plt == 'Linux': 
