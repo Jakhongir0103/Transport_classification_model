@@ -5,10 +5,10 @@ import pathlib
 import platform
 
 temp = pathlib.PosixPath
-pathlib.WindowsPath = pathlib.PureWindowsPath
-st.title(f'wp: {pathlib.PureWindowsPath}')
+st.title(f'pwp: {pathlib.PureWindowsPath}')
 st.title(f'wp: {pathlib.WindowsPath}')
 st.title(f'pp: {pathlib.PosixPath}')
+pathlib.WindowsPath = pathlib.PureWindowsPath
 
 # plt = platform.system()
 # if plt == 'Linux': 
